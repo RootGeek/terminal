@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.terminal {
+    background-color: black;
+    border: 1px solid #00ff00;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+h1 {
+    text-align: center;
+}
+
+#output {
+    height: 300px;
+    overflow-y: auto; /* Ermöglicht das Scrollen */
+    margin-bottom: 10px;
+    scrollbar-width: none; /* Versteckt die Scrollbar in Firefox */
+    -ms-overflow-style: none; /* Versteckt die Scrollbar in IE und Edge */
+}
+
+#output::-webkit-scrollbar {
+    display: none; /* Versteckt die Scrollbar in Chrome, Safari und Opera */
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 10px;
+}
+
+#input {
+    background-color: black;
+    color: #00ff00;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+}
